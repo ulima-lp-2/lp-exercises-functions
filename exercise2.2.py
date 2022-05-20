@@ -1,7 +1,7 @@
-import time
+# write code
+import random
 
-seconds = 0
-for i in range(10):    
-    print('\r' + str(seconds), end='', flush=True)
-    seconds = seconds + 1
-    time.sleep(1)
+def getRandom():
+    r = random.randint(1,9)
+    # print(r)
+    return r
