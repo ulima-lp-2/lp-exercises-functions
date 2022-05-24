@@ -6,10 +6,13 @@ def getRandom():
     #print(r)
     return r
 
-print('i\tend\tn\tsum')
+print('i\tend\tn\tsum\treduce')
 def reduce(i, end, sum):
     n = getRandom()
-    print(i, '\t', end, '\t', n, '\t', sum)
+    func = 'reduce'
+    if i == end:
+        func = sum
+    print(i, '\t', end, '\t', n, '\t', sum, '\t', func)
     if i < end:
         sum_ = sum + n
         #print('sum:', sum_)
