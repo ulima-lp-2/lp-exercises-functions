@@ -1,4 +1,3 @@
-# write code
 import random
 
 def getRandom():
