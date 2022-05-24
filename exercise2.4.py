@@ -13,8 +13,8 @@ def sum(i, end, sum_):
     if i < end:
         func = 'sum'
     print(i, '\t', end, '\t', numero, '\t', sum_, '\t', func)
-    sum_ = sum_ + numero
     if i < end:
+        sum_ = sum_ + numero
         return sum(i + 1, end, sum_)
     else:
         return sum_
